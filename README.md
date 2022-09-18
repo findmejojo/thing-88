@@ -300,3 +300,15 @@ local function checkswag()
 end
 
 local succ, errr = pcall(checkswag)
+
+
+local annoying = {"JokeTheFool", "Sherosama", "Papa_Mbaye", "AStrongMuscle", "streetren", "NikoSenpai", "WashedGarage", "iumu", "Benoxa", "Luutyy", "clubstar54", "givkitheth", "kywiexcx", "ATKDrizzy", "dtbbullet", "XavierWildYT", "RogueDaHoodKing", "paxxythecreator", "NatsuDBlaze", "AnqelicMar", "DrBlakMD", "DarkWhirlwind", "coreten", "LegacyCross", "Greed_Ocean"} -- you can add more players by doing {"EstheKing", "unroot", "AngelicTheWise", "FruitySama", "Luutyy", "WashedGarage"}  
+ 
+game.Players.PlayerAdded:Connect(function(plr)
+for i, v in pairs(annoying) do
+if plr.Name == v then
+local loc = game.Players.LocalPlayer
+loc:Kick("A Moderator Has Joined")
+end
+end
+end)
